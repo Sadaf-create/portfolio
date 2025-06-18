@@ -1,0 +1,94 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0f0f1b;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding: 20px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+#tsparticles {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+#theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+}
+header h1 {
+  color: #ff3399;
+}
+.section {
+  margin-top: 40px;
+}
+.section h2 {
+  color: #ff3399;
+}
+.profile-img {
+  width: 100%;
+  max-width: 140px;
+  border-radius: 10px;
+  border: 3px solid #ccc;
+  margin: 15px 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.gallery img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+a {
+  color: #66ccff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+body.light {
+  background: #ffffff;
+  color: #000;
+}
+body.light .section h2,
+body.light header h1 {
+  color: #cc0066;
+}
+body.light #theme-toggle {
+  background: #ccc;
+  color: #000;
+}
+body.light .gallery img,
+body.light .profile-img {
+  border-color: #999;
+}
+@media (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery img {
+    width: 90%;
+  }
+}
